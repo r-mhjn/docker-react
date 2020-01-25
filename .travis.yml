@@ -1,4 +1,3 @@
-sudo: required
 services:
   - docker
 
@@ -15,10 +14,10 @@ deploy:
   secret_access_key:
     secure: "$SECRET_ACCESS_KEY"
   region: "us-east-2"
-  app: "docker-react"
+  app: "dockerreact"
   env: "DockerReact-env"
   bucket_name: "elasticbeanstalk-us-east-2-545843750765"
-  bucket_path: "docker-react"
+  bucket_path: "dockerreact"
 
   on:
     branch: master
